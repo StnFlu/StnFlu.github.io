@@ -92,7 +92,6 @@ h2{
 header {
     text-align: center;
     align-items: center;
-    background-color: #eec643;
     background-image: url('untitled.png');
     min-height: 100vh;
     width: 100%;
@@ -188,6 +187,7 @@ section {
     width: 40%;
     float: left;
     height: 300px;
+    margin: 20px;
 }
 #large {
     width: 50%;
