@@ -4,6 +4,9 @@
     margin: 0;
     color: #EEF0F2;
 }
+p{
+    line-height:26px;
+}
 body {
     background-color: #141414;
     padding: 0;
@@ -21,17 +24,71 @@ body {
     max-width: 1000px;
     padding: 0px;
 }
-.aboutMe {
+.contentBox {
+    display: normal;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1200px;
+    padding: 0px;
+}
+.featured {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-
     margin: 0px auto;
     padding: 100px 0px;
     max-width: 1000px;
     padding: 0px;
 }
+.subHead {
+    margin: 10vh;
+    margin-bottom: 2vh;
+    text-align: center;
+    min-width: 1000px;
+}
+h2{
+    margin: 100px auto;
+    text-align: center;
+    font-size: 40px;
+    max-width: 600px;
+    position: relative;
+}
+    h2:after, h2:before {
+        content: " ";
+        width: 150px;
+        height: 4px;
+        top: -10px;
+        align-content: space-around;
+        background: #b83b3b;
+        display: inline-block;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+.subsubHead {
+    margin: 10px auto;
+    text-align: left;
+    font-size: 18px;
+    max-width: 600px;
+    position: relative;
+}
+
+.subsubHead:after {
+        content: " ";
+        width: 150px;
+        height: 4px;
+        top: -4px;
+        align-content: space-around;
+        background: #b83b3b;
+        display: inline-block;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 header {
     text-align: center;
     align-items: center;
@@ -70,7 +127,7 @@ nav {
         color: #EEF0F2;
         text-decoration: none;
         float: none;
-        background-color: rgba(0, 0, 0, 0.2);
+        background: #b83b3b;
         background-blend-mode: saturation;
     }
 
@@ -82,7 +139,6 @@ nav {
     color: #45a29e;
 }
 
-
 navbar {
     text-align: center;
 }
@@ -92,12 +148,11 @@ h1{
 hr {
     display: block;
     margin-top: 0;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    margin-right: 0.5em;
-    border-style: inset;
-    border-block-color: rgba(255, 255, 255, 0.8);
-    border-width: 1px;
+
+    border-style: dashed;
+    border-block-color: #b83b3b;
+    border-width: 8px;
+    background: #b83b3b;
 }
 #page-container {
     position: relative;
@@ -125,33 +180,27 @@ section {
     text-justify: inter-word;
    }
 #container {
-
     width: 200px;
     height: 400px;
-
     width: 100%;
 }
-#first {
-    width: 30%;
+#small {
+    width: 40%;
     float: left;
     height: 300px;
-
-
 }
-#second {
-    width: 70%;
-    float: left;
+#large {
+    width: 50%;
+    float: right;
     height: 300px;
 
 }
+
 #aboutMeContent {
     padding: 5%;
-
     text-align: left;
 }
-#clear {
-    clear: both;
-}
+
 #box {
     border-radius: 5px;
     background: rgb(256, 256, 256, 0.9);
