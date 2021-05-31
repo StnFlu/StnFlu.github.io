@@ -8,6 +8,7 @@ body {
     background-color: #141414;
     padding: 0;
     margin: 0;
+    height: 100%;
 }
 .test {
     display: flex;
@@ -15,6 +16,17 @@ body {
     flex-direction: column;
     align-items: flex-start;
     min-height: 100vh;
+    margin: 0px auto;
+    padding: 100px 0px;
+    max-width: 1000px;
+    padding: 0px;
+}
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
     margin: 0px auto;
     padding: 100px 0px;
     max-width: 1000px;
@@ -89,7 +101,7 @@ hr {
 }
 #page-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%;
 }
 #header-container {
     position: relative;
@@ -97,7 +109,7 @@ hr {
 }
 #content-container {
     position: relative;
-    min-height: 60vh;
+    min-height: 100vh;
 }
 #content-wrap {
 
@@ -113,23 +125,24 @@ section {
     text-justify: inter-word;
    }
 #container {
-    padding: 20px;
+
     width: 200px;
-    height: 150px;
-    margin: auto;
-    width: 80%;
+    height: 400px;
+
+    width: 100%;
 }
 #first {
     width: 30%;
     float: left;
     height: 300px;
 
+
 }
 #second {
     width: 70%;
     float: left;
     height: 300px;
-    background-color: green;
+
 }
 #aboutMeContent {
     padding: 5%;
