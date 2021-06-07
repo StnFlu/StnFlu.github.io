@@ -13,16 +13,30 @@ body {
     margin: 0;
     height: 100%;
 }
-.test {
+header {
+    text-align: center;
+    align-items: center;
+    background-image: url('untitled.png');
+    min-height: 85vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title {
+
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-    min-height: 100vh;
+
     margin: 0px auto;
     padding: 100px 0px;
     max-width: 1000px;
-    padding: 0px;
+    padding: 40vh;
+    padding-left: 30vh;
+    padding-right: 30vh;
 }
 .contentBox {
     display: normal;
@@ -89,17 +103,7 @@ h2{
         margin-left: 20px;
         margin-right: 20px;
     }
-header {
-    text-align: center;
-    align-items: center;
-    background-image: url('untitled.png');
-    min-height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 nav {
 
     text-align: center;
