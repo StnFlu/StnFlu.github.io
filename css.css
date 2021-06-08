@@ -65,21 +65,15 @@ body {
     padding: 0px;
 }
 .subHead {
-    margin: 10vh;
+    margin: 1vh;
     margin-bottom: 2vh;
     text-align: center;
-    min-width: 1000px;
-}
-h2{
-    margin: 100px auto;
-
     font-size: 40px;
-    max-width: 600px;
-    position: relative;
 }
-    h2:after, h2:before {
+
+    .subHead:after, .subHead:before {
         content: " ";
-        width: 150px;
+        width: 50px;
         height: 4px;
         top: -10px;
         align-content: space-around;
@@ -111,7 +105,6 @@ h2{
     }
 
 nav {
-
     text-align: center;
     padding: 0;
     margin: 0;
@@ -171,7 +164,7 @@ hr {
 
 #content-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 100vw;
 }
 #content-wrap {
 
