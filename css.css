@@ -4,6 +4,18 @@
     margin: 0;
     color: #EEF0F2;
 }
+
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 600px) {
+   h1 {
+        font-size: 8vw;
+    }
+}
+
 p{
     line-height:26px;
 }
@@ -11,8 +23,7 @@ p{
     background-color: rgb(43 39 37 / 0.22);
     border-radius: 5px;
     padding: 10px;
-    margin: 5px;
-
+    margin: 5px 0px;
 }
 body {
     background-color: #141414;
@@ -145,10 +156,7 @@ nav {
 navbar {
     text-align: center;
 }
-h1{
-    color: white;
-    font-size:4vw;
-}
+
 hr {
     display: block;
     margin-top: 0;
@@ -225,9 +233,7 @@ footer {
 }
 
 
-h1{
-    font-size: 72pt;
-}
+
 
 @font-face {
     font-family: myFirstFont;
