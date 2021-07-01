@@ -5,14 +5,22 @@
     color: #EEF0F2;
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 800px) {
     h1 {
         font-size: 4vw;
     }
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 799px) {
    h1 {
         font-size: 8vw;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -25,7 +33,7 @@
 
 p {
     color: #C8C8C8;
-    line-height: 26px;
+    line-height: 28px;
     text-align: center;
 }
 .textBackground {
@@ -74,13 +82,10 @@ body {
     padding: 100px 0px;
     max-width: 100vh;
     padding: 0px;
+
 }
 
-#container {
-    width: 200px;
-    height: 400px;
-    width: 100%;
-}
+
 .featured {
     display: flex;
     justify-content: center;
@@ -92,8 +97,7 @@ body {
     padding: 0px;
 }
 .subHead {
-    margin: 1vh;
-    margin-bottom: 2vh;
+    margin:50px;
     text-align: center;
     font-size: 40px;
 }
@@ -110,6 +114,12 @@ body {
         margin-left: 20px;
         margin-right: 20px;
     }
+
+#headerCont {
+    text-align:center;
+    height: 100px;
+    width: 100%;
+}
 .subsubHead {
     margin: 10px auto;
     text-align: center;
@@ -199,9 +209,11 @@ hr {
     min-width:99vw;
 }
 
-#content-container {
+.content-container {
     position: relative;
-    min-height: 100vw;
+    width: 80vw;
+    display: block;
+    margin: auto;
 }
 #content-wrap {
 
@@ -209,23 +221,33 @@ hr {
 }
 
 section {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top:3%;
-
+    margin-left:20%;
+    margin-right: 20%;
     text-align: justify;
     text-justify: inter-word;
    }
-
-#small {
-    width: 40vh;
-    float: left;
-    margin: 20px;
+#container {
+    width: 100%;
+    overflow: auto;
+    display: flex;
 }
-#large {
-    width: 55vh;
-    float: right;
 
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text {
+    /* width: 40vh;*/
+    flex-grow: 1;
+    padding: 10px;
+    margin: 10px;
+    align-items: stretch;
+}
+.media {
+    /*width: 50vh*/
+    flex-grow: 1;
+    align-items: stretch;
 }
 
 #aboutMeContent {
@@ -253,8 +275,22 @@ footer {
     height: 2.5rem;
 }
 
+.videoAlignment {
+    width: 100%;
+    height: auto;
+}
 
 
+
+.left-half {
+    flex: 1;
+    padding: 1rem;
+}
+
+.right-half {
+    flex: 1;
+    padding: 1rem;
+}
 
 @font-face {
     font-family: myFirstFont;
