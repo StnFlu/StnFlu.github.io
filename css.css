@@ -127,7 +127,6 @@ body {
     font-size: 18px;
     max-width: 100vh;
     position: relative;
-
 }
 
 
@@ -199,8 +198,7 @@ hr {
 }
 
 section {
-    margin-left:20%;
-    margin-right: 20%;
+    max-width:100vh;
     text-align: justify;
     text-justify: inter-word;
    }
@@ -229,7 +227,7 @@ div {
 }
 
 #aboutMeContent {
-    padding: 5% 0;
+    padding: 1% 0;
     text-align: left;
 }
 
